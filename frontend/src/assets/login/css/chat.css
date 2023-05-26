@@ -1,0 +1,48 @@
+.css_ul_li_chat ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.css_ul_li_chat li {
+    padding: 0.5rem 1rem;
+}
+
+.css_ul_li_chat li:nth-child(odd) {
+    background: #efefef;
+}
+
+.form_submit_chat {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+}
+
+.input_chat {
+    border: none;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    margin: 0.25rem;
+}
+
+.input_chat:focus {
+    outline: none;
+}
+
+.button_Send_chat {
+    background: #333;
+    border: none;
+    padding: 0 1rem;
+    margin: 0.25rem;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+}
