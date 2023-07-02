@@ -24,16 +24,15 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
   done(null, user);
 });
-//facebook, google
 require('./passport/passport-facebook')(passport);
 require('./passport/passport-google')(passport);
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(cors()); // Đặt cors middleware trước router
+app.use(cors()); 
 app.use(router);
 
 const server = http.createServer(app);
-socketIOConfig(server); // Sử dụng module socket.js để cấu hình Socket.IO
+socketIOConfig(server); 
 
 app.use(express.static('dist'));
 

@@ -257,7 +257,6 @@ export default
                     this.inputMessage = '';
                 }
             },
-
             getChatHistory() {
                 if (this.selectedUser) {
                     // Gửi yêu cầu lấy lịch sử chat tới máy chủ
